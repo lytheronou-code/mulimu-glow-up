@@ -202,6 +202,9 @@ const it: Dict = {
   "contact.checkin": "Check-in",
   "contact.checkinValue": "dalle 15:00 — check-out entro le 10:30",
   "contact.write": "Scrivici",
+  "contact.whatsappCta": "Scrivici su WhatsApp",
+  "contact.whatsappMessage":
+    "Ciao Mulimù, vorrei ricevere informazioni sulla disponibilità e sul soggiorno.",
 
   "footer.tagline": "Guest house a gestione familiare nelle colline dell'Oltrepò Pavese.",
   "footer.rights": "Tutti i diritti riservati.",
@@ -374,6 +377,9 @@ const en: Dict = {
   "contact.checkin": "Check-in",
   "contact.checkinValue": "from 3:00 pm — check-out by 10:30 am",
   "contact.write": "Write to us",
+  "contact.whatsappCta": "Message us on WhatsApp",
+  "contact.whatsappMessage":
+    "Hello Mulimù, I would like information about availability and staying with you.",
 
   "footer.tagline": "Family-run guest house in the hills of the Oltrepò Pavese.",
   "footer.rights": "All rights reserved.",
@@ -547,6 +553,9 @@ const fr: Dict = {
   "contact.checkin": "Arrivée",
   "contact.checkinValue": "à partir de 15h00 — départ avant 10h30",
   "contact.write": "Écrivez-nous",
+  "contact.whatsappCta": "Écrivez-nous sur WhatsApp",
+  "contact.whatsappMessage":
+    "Bonjour Mulimù, je souhaiterais recevoir des informations sur les disponibilités et le séjour.",
 
   "footer.tagline": "Maison d'hôtes familiale dans les collines de l'Oltrepò Pavese.",
   "footer.rights": "Tous droits réservés.",
@@ -719,6 +728,9 @@ const de: Dict = {
   "contact.checkin": "Check-in",
   "contact.checkinValue": "ab 15:00 Uhr — Check-out bis 10:30 Uhr",
   "contact.write": "Schreiben Sie uns",
+  "contact.whatsappCta": "Schreiben Sie uns auf WhatsApp",
+  "contact.whatsappMessage":
+    "Hallo Mulimù, ich hätte gerne Informationen zur Verfügbarkeit und zu einem Aufenthalt.",
 
   "footer.tagline": "Familiengeführtes Gästehaus in den Hügeln des Oltrepò Pavese.",
   "footer.rights": "Alle Rechte vorbehalten.",
@@ -893,6 +905,9 @@ const nl: Dict = {
   "contact.checkin": "Check-in",
   "contact.checkinValue": "vanaf 15:00 — check-out tot 10:30",
   "contact.write": "Schrijf ons",
+  "contact.whatsappCta": "Stuur ons een WhatsApp-bericht",
+  "contact.whatsappMessage":
+    "Hallo Mulimù, ik ontvang graag informatie over beschikbaarheid en een verblijf.",
 
   "footer.tagline": "Familiaal guest house in de heuvels van de Oltrepò Pavese.",
   "footer.rights": "Alle rechten voorbehouden.",

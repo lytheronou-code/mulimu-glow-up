@@ -7,6 +7,7 @@ import {
   CONTACT_EMAIL,
   CONTACT_PHONE,
   CONTACT_PHONE_HREF,
+  getWhatsAppUrl,
 } from "@/data/site";
 import { useI18n } from "@/i18n";
 
@@ -60,6 +61,14 @@ export function Footer() {
           </a>
           <a href={`mailto:${CONTACT_EMAIL}`} className="link-underline block w-fit">
             {CONTACT_EMAIL}
+          </a>
+          <a
+            href={getWhatsAppUrl(t("contact.whatsappMessage"))}
+            target="_blank"
+            rel="noreferrer"
+            className="link-underline block w-fit text-accent"
+          >
+            {t("contact.whatsappCta")}
           </a>
         </address>
       </div>

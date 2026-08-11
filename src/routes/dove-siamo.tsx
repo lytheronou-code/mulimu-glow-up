@@ -1,5 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, ArrowUpRight, Car, Clock3, Mail, MapPin, Phone, Train } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Car,
+  Clock3,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Phone,
+  Train,
+} from "lucide-react";
 
 import panorama from "@/assets/struttura-6.webp";
 import { Footer } from "@/components/Footer";
@@ -14,6 +24,7 @@ import {
   MAP_EMBED_URL,
   MAP_URL,
   absoluteUrl,
+  getWhatsAppUrl,
 } from "@/data/site";
 import { useI18n } from "@/i18n";
 
@@ -115,6 +126,20 @@ function DirectionsPage() {
                     className="link-underline mt-2 inline-block font-display text-2xl"
                   >
                     {CONTACT_PHONE}
+                  </a>
+                </div>
+              </div>
+              <div className="flex gap-4 border-t border-border pt-8">
+                <MessageCircle aria-hidden="true" className="mt-1 size-5 shrink-0 text-accent" />
+                <div>
+                  <p className="eyebrow">WhatsApp</p>
+                  <a
+                    href={getWhatsAppUrl(t("contact.whatsappMessage"))}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="link-underline mt-2 inline-block font-display text-2xl text-accent"
+                  >
+                    {t("contact.whatsappCta")}
                   </a>
                 </div>
               </div>

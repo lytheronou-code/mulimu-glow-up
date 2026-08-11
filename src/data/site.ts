@@ -3,6 +3,8 @@ export const SITE_URL = "https://mulimu.it";
 export const CONTACT_EMAIL = "info@mulimu.it";
 export const CONTACT_PHONE = "+39 378 011 1325";
 export const CONTACT_PHONE_HREF = "+393780111325";
+export const getWhatsAppUrl = (message: string) =>
+  `https://wa.me/${CONTACT_PHONE_HREF.replace(/\D/g, "")}?text=${encodeURIComponent(message)}`;
 
 export const ADDRESS = {
   street: "Frazione Piane, 4",

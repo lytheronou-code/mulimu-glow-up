@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Grape, Mountain, Flower2 } from "lucide-react";
+import { ArrowRight, Flower2, Grape, MessageCircle, Mountain } from "lucide-react";
 
 import { Header } from "@/components/Header";
 import { Reveal } from "@/components/Reveal";
@@ -13,6 +13,7 @@ import {
   CONTACT_PHONE,
   CONTACT_PHONE_HREF,
   absoluteUrl,
+  getWhatsAppUrl,
 } from "@/data/site";
 
 import hero from "@/assets/hero.webp";
@@ -288,9 +289,20 @@ function Home() {
             <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
               {t("contact.body")}
             </p>
-            <a href={`mailto:${CONTACT_EMAIL}`} className="btn-solid mt-10">
-              {t("contact.write")} <ArrowRight aria-hidden="true" className="size-4" />
-            </a>
+            <div className="mt-10 flex flex-wrap gap-3">
+              <a href={`mailto:${CONTACT_EMAIL}`} className="btn-solid">
+                {t("contact.write")} <ArrowRight aria-hidden="true" className="size-4" />
+              </a>
+              <a
+                href={getWhatsAppUrl(t("contact.whatsappMessage"))}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-outline"
+              >
+                <MessageCircle aria-hidden="true" className="size-4" />
+                {t("contact.whatsappCta")}
+              </a>
+            </div>
           </Reveal>
           <Reveal as="dl" delay={120} className="space-y-8 lg:border-l lg:border-border lg:pl-16">
             <div>
@@ -306,6 +318,19 @@ function Home() {
               <dd className="mt-2 font-display text-2xl">
                 <a href={`tel:${CONTACT_PHONE_HREF}`} className="link-underline">
                   {CONTACT_PHONE}
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt className="eyebrow">WhatsApp</dt>
+              <dd className="mt-2 font-display text-2xl">
+                <a
+                  href={getWhatsAppUrl(t("contact.whatsappMessage"))}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="link-underline text-accent"
+                >
+                  {t("contact.whatsappCta")}
                 </a>
               </dd>
             </div>
