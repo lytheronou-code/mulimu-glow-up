@@ -3,6 +3,7 @@ import {
   ArrowRight,
   ArrowUpRight,
   Car,
+  Clock3,
   Mail,
   MapPin,
   MessageCircle,
@@ -45,6 +46,16 @@ export const Route = createFileRoute("/dove-siamo")({
     links: [{ rel: "canonical", href: absoluteUrl("/dove-siamo") }],
   }),
 });
+
+const TRAVEL_TIMES = [
+  "milan",
+  "linate",
+  "bergamo",
+  "malpensa",
+  "bologna",
+  "lugano",
+  "zurich",
+] as const;
 
 function DirectionsPage() {
   const { t } = useI18n();
@@ -207,6 +218,23 @@ function DirectionsPage() {
                 </p>
               </Reveal>
             </div>
+
+            <Reveal className="mt-20">
+              <div className="flex items-center gap-3">
+                <Clock3 aria-hidden="true" className="size-5 text-accent" />
+                <p className="eyebrow">{t("directions.timesTitle")}</p>
+              </div>
+              <div className="mt-7 grid border-l border-t border-border sm:grid-cols-2 lg:grid-cols-4">
+                {TRAVEL_TIMES.map((place) => (
+                  <div key={place} className="border-b border-r border-border bg-background p-6">
+                    <p className="text-sm text-muted-foreground">
+                      {t(`directions.place.${place}`)}
+                    </p>
+                    <p className="mt-2 font-display text-2xl">{t(`directions.time.${place}`)}</p>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
           </div>
         </section>
 
