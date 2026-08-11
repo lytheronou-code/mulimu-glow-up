@@ -1,6 +1,7 @@
 {
   "name": "Mulimù Guest House",
   "short_name": "Mulimù",
+  "lang": "it",
   "description": "Guest house familiare tra i vigneti dell'Oltrepò Pavese.",
   "start_url": "/",
   "display": "standalone",
