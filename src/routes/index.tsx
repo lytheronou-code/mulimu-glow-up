@@ -22,7 +22,7 @@ import house from "@/assets/house.webp";
 import panorama from "@/assets/struttura-6.webp";
 import degustazioni from "@/assets/degustazioni-premium.webp";
 import trekking from "@/assets/trekking.webp";
-import massaggi from "@/assets/massaggi.webp";
+import massaggi from "@/assets/massaggi-premium-v2.webp";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -217,7 +217,7 @@ function Home() {
                   src={img}
                   alt={t(`services.${key}.title`)}
                   loading="lazy"
-                  className="aspect-4/3 w-full object-cover"
+                  className="aspect-[16/10] w-full object-cover object-center sm:aspect-4/3"
                 />
               </div>
               <div className="mt-6 flex items-center gap-3">
