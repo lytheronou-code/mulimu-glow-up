@@ -20,7 +20,7 @@ import {
 import hero from "@/assets/hero.webp";
 import house from "@/assets/house.webp";
 import panorama from "@/assets/struttura-6.webp";
-import degustazioni from "@/assets/degustazioni.webp";
+import degustazioni from "@/assets/degustazioni-premium.webp";
 import trekking from "@/assets/trekking.webp";
 import massaggi from "@/assets/massaggi.webp";
 
