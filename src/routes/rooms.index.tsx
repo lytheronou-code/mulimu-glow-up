@@ -25,7 +25,7 @@ export const Route = createFileRoute("/rooms/")({
         property: "og:description",
         content: "Due camere con bagno privato, fibra ottica e vista sui vigneti dell'Oltrepò.",
       },
-      { property: "og:image", content: absoluteUrl("/og-mulimu.webp") },
+      { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
       { property: "og:url", content: absoluteUrl("/rooms") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/rooms") }],

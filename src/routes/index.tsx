@@ -38,7 +38,7 @@ export const Route = createFileRoute("/")({
         content:
           "Due camere con vista sui vigneti, colazione locale e esperienze su misura nelle colline dell'Oltrepò Pavese.",
       },
-      { property: "og:image", content: absoluteUrl("/og-mulimu.webp") },
+      { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
       { property: "og:url", content: absoluteUrl("/") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/") }],

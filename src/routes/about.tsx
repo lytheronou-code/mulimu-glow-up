@@ -25,7 +25,7 @@ export const Route = createFileRoute("/about")({
         content:
           "Da Milano alle colline dell'Oltrepò Pavese: scopri le persone e i valori dietro Mulimù.",
       },
-      { property: "og:image", content: absoluteUrl("/og-mulimu.webp") },
+      { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
       { property: "og:url", content: absoluteUrl("/about") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/about") }],

@@ -35,7 +35,7 @@ export const Route = createFileRoute("/la-struttura")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: absoluteUrl("/og-mulimu.webp") },
+      { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
       { property: "og:url", content: absoluteUrl("/la-struttura") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/la-struttura") }],

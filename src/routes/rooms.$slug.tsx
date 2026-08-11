@@ -30,7 +30,7 @@ export const Route = createFileRoute("/rooms/$slug")({
           content: `Scopri ${name}, una delle due camere della guest house Mulimù nell'Oltrepò Pavese.`,
         },
         { property: "og:type", content: "article" },
-        { property: "og:image", content: absoluteUrl("/og-mulimu.webp") },
+        { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
         { property: "og:url", content: absoluteUrl(`/rooms/${params.slug}`) },
       ],
       links: [{ rel: "canonical", href: absoluteUrl(`/rooms/${params.slug}`) }],
