@@ -60,38 +60,41 @@ function Home() {
       <Header />
 
       {/* Hero */}
-      <section className="relative flex min-h-[100svh] items-end overflow-hidden">
+      <section
+        className="relative flex items-end overflow-hidden bg-primary"
+        style={{ minHeight: "max(100svh, 42rem)" }}
+      >
         <img
           src={hero}
           alt="Le colline e i vigneti dell'Oltrepò Pavese visti da Mulimù"
           fetchPriority="high"
-          className="animate-kenburns absolute inset-0 size-full object-cover"
+          className="home-hero-media absolute inset-0 size-full object-cover object-[52%_center] md:object-center"
           width={2000}
           height={1500}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/45" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background/95 to-transparent" />
-        <div className="relative mx-auto w-full max-w-7xl px-6 pb-20 lg:px-10 lg:pb-28">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/30 md:from-black/80 md:via-black/30 md:to-black/45" />
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background/90 to-transparent md:h-40 md:from-background/95" />
+        <div className="relative mx-auto w-full max-w-7xl px-6 pb-12 sm:pb-16 lg:px-10 lg:pb-28">
           <p className="eyebrow animate-rise text-primary-foreground/80">{t("hero.eyebrow")}</p>
           <span className="rule-accent animate-rise mt-5" />
-          <h1 className="animate-rise mt-6 max-w-5xl font-display text-[clamp(3.2rem,8vw,7rem)] leading-[0.94] tracking-[0.01em] text-primary-foreground">
+          <h1 className="animate-rise mt-5 max-w-5xl font-display text-[clamp(2.75rem,12vw,3.4rem)] leading-[0.95] tracking-[0.01em] text-primary-foreground sm:mt-6 sm:text-[clamp(3.2rem,8vw,7rem)]">
             {t("hero.title")}
           </h1>
-          <p className="animate-rise mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/85">
+          <p className="animate-rise mt-5 max-w-xl text-base leading-relaxed text-primary-foreground/90 sm:mt-6 sm:text-lg">
             {t("hero.subtitle")}
           </p>
-          <div className="animate-rise mt-10 flex flex-wrap items-center gap-7">
+          <div className="animate-rise mt-7 flex flex-wrap items-center gap-5 sm:mt-10 sm:gap-7">
             <a
               href={BOOKING_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-3 border border-primary-foreground/50 px-8 py-4 text-[0.72rem] uppercase tracking-[0.22em] text-primary-foreground transition-all duration-500 hover:-translate-y-0.5 hover:bg-primary-foreground hover:text-foreground"
+              className="inline-flex items-center gap-3 border border-primary-foreground/50 px-6 py-3.5 text-[0.7rem] uppercase tracking-[0.2em] text-primary-foreground transition-all duration-500 hover:-translate-y-0.5 hover:bg-primary-foreground hover:text-foreground sm:px-8 sm:py-4 sm:text-[0.72rem] sm:tracking-[0.22em]"
             >
               {t("hero.cta")} <ArrowRight aria-hidden="true" className="size-4" />
             </a>
             <Link
               to="/rooms"
-              className="link-underline text-[0.72rem] uppercase tracking-[0.22em] text-primary-foreground"
+              className="link-underline text-[0.7rem] uppercase tracking-[0.2em] text-primary-foreground sm:text-[0.72rem] sm:tracking-[0.22em]"
             >
               {t("rooms.cta")}
             </Link>
