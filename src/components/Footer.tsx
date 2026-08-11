@@ -22,10 +22,10 @@ export function Footer() {
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
             {t("footer.tagline")}
           </p>
-          <p className="eyebrow mt-7">Mulimù — Ospitalità rurale — Guest house</p>
+          <p className="eyebrow mt-7">{t("brand.identity")}</p>
         </div>
 
-        <nav aria-label="Navigazione nel footer" className="space-y-3 text-sm">
+        <nav aria-label={t("a11y.footerNavigation")} className="space-y-3 text-sm">
           <p className="eyebrow">Mulimù</p>
           <Link to="/about" className="link-underline block w-fit">
             {t("nav.story")}

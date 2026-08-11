@@ -6,27 +6,35 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { I18nProvider } from "../i18n";
+import { I18nProvider, useI18n } from "../i18n";
 import { ADDRESS, CONTACT_EMAIL, CONTACT_PHONE, SITE_URL, SOCIAL_IMAGE_URL } from "../data/site";
 
 function NotFoundComponent() {
   return (
+    <I18nProvider>
+      <NotFoundContent />
+    </I18nProvider>
+  );
+}
+
+function NotFoundContent() {
+  const { t } = useI18n();
+
+  return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
         <h1 className="font-display text-7xl text-foreground">404</h1>
-        <h2 className="mt-4 font-display text-2xl text-foreground">Pagina non trovata</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
-          La pagina che cerchi non esiste o è stata spostata.
-        </p>
+        <h2 className="mt-4 font-display text-2xl text-foreground">{t("error.notFoundTitle")}</h2>
+        <p className="mt-2 text-sm text-muted-foreground">{t("error.notFoundBody")}</p>
         <div className="mt-8">
           <Link
             to="/"
             className="inline-flex items-center justify-center border border-foreground/30 px-6 py-3 text-[0.72rem] uppercase tracking-[0.22em] transition-colors hover:bg-foreground hover:text-background"
           >
-            Torna alla home
+            {t("error.backHome")}
           </Link>
         </div>
       </div>
@@ -36,15 +44,23 @@ function NotFoundComponent() {
 
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
+
+  return (
+    <I18nProvider>
+      <ErrorContent reset={reset} />
+    </I18nProvider>
+  );
+}
+
+function ErrorContent({ reset }: { reset: () => void }) {
   const router = useRouter();
+  const { t } = useI18n();
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="font-display text-2xl text-foreground">Questa pagina non si è caricata</h1>
-        <p className="mt-2 text-sm text-muted-foreground">
-          Qualcosa è andato storto. Puoi riprovare o tornare alla home.
-        </p>
+        <h1 className="font-display text-2xl text-foreground">{t("error.loadTitle")}</h1>
+        <p className="mt-2 text-sm text-muted-foreground">{t("error.loadBody")}</p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <button
             onClick={() => {
@@ -53,13 +69,13 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
             }}
             className="border border-foreground/30 px-6 py-3 text-[0.72rem] uppercase tracking-[0.22em] transition-colors hover:bg-foreground hover:text-background"
           >
-            Riprova
+            {t("error.retry")}
           </button>
           <a
             href="/"
             className="border border-foreground/30 px-6 py-3 text-[0.72rem] uppercase tracking-[0.22em] transition-colors hover:bg-foreground hover:text-background"
           >
-            Home
+            {t("nav.home")}
           </a>
         </div>
       </div>

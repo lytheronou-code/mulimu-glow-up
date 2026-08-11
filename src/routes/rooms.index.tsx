@@ -43,7 +43,7 @@ function RoomsPage() {
       <section className="relative flex min-h-[70svh] items-end overflow-hidden">
         <img
           src={roomsCover}
-          alt="Interno di Mulimù con vista sulle colline"
+          alt={t("image.roomsAlt")}
           width={1247}
           height={1440}
           fetchPriority="high"

@@ -67,7 +67,7 @@ function Home() {
       >
         <img
           src={hero}
-          alt="Le colline e i vigneti dell'Oltrepò Pavese visti da Mulimù"
+          alt={t("image.heroAlt")}
           fetchPriority="high"
           className="home-hero-media absolute inset-0 size-full object-cover object-[52%_center] md:object-center"
           width={2000}
@@ -109,7 +109,7 @@ function Home() {
           <Reveal className="frame-media relative">
             <img
               src={house}
-              alt="La colazione nel giardino di Mulimù insieme a Pongo"
+              alt={t("about.imageAlt")}
               width={1080}
               height={1416}
               loading="lazy"
@@ -253,7 +253,7 @@ function Home() {
       <section id="luogo" className="relative overflow-hidden">
         <img
           src={panorama}
-          alt="Panorama delle colline dell'Oltrepò Pavese"
+          alt={t("image.placeAlt")}
           width={1999}
           height={1133}
           loading="lazy"
@@ -329,7 +329,7 @@ function Home() {
               </dd>
             </div>
             <div>
-              <dt className="eyebrow">Telefono</dt>
+              <dt className="eyebrow">{t("contact.phone")}</dt>
               <dd className="mt-2 font-display text-2xl">
                 <a href={`tel:${CONTACT_PHONE_HREF}`} className="link-underline">
                   {CONTACT_PHONE}

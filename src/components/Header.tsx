@@ -15,7 +15,7 @@ const NAV_ITEMS = [
 ] as const;
 
 function LanguageSwitcher({ onPick, compact = false }: { onPick?: () => void; compact?: boolean }) {
-  const { locale, setLocale } = useI18n();
+  const { locale, setLocale, t } = useI18n();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -44,7 +44,7 @@ function LanguageSwitcher({ onPick, compact = false }: { onPick?: () => void; co
         onClick={() => setOpen((current) => !current)}
         aria-haspopup="listbox"
         aria-expanded={open}
-        aria-label="Cambia lingua"
+        aria-label={t("a11y.changeLanguage")}
         className={`flex items-center border border-current/20 bg-background/90 text-[0.68rem] uppercase text-foreground backdrop-blur-sm transition-colors hover:text-accent ${
           compact ? "gap-1.5 px-2.5 py-2 tracking-[0.12em]" : "gap-2 px-3 py-2 tracking-[0.16em]"
         }`}
@@ -62,7 +62,7 @@ function LanguageSwitcher({ onPick, compact = false }: { onPick?: () => void; co
       {open ? (
         <ul
           role="listbox"
-          aria-label="Lingue disponibili"
+          aria-label={t("a11y.availableLanguages")}
           className="absolute right-0 z-50 mt-2 w-44 border border-border bg-background py-1 shadow-xl"
         >
           {LOCALES.map((language) => (
@@ -131,10 +131,10 @@ export function Header({ overlay = true }: { overlay?: boolean }) {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5 lg:px-10">
-        <Link to="/" aria-label="Mulimù — Home" className="flex items-center">
+        <Link to="/" aria-label={t("a11y.home")} className="flex items-center">
           <img
             src={solidHeader ? logo : logoLight}
-            alt="Mulimù — Ospitalità rurale"
+            alt={t("brand.logoAlt")}
             width={321}
             height={319}
             className={`h-16 w-auto transition-all duration-500 lg:h-[4.5rem] ${
@@ -143,7 +143,7 @@ export function Header({ overlay = true }: { overlay?: boolean }) {
           />
         </Link>
 
-        <nav aria-label="Navigazione principale" className="hidden items-center gap-7 lg:flex">
+        <nav aria-label={t("a11y.mainNavigation")} className="hidden items-center gap-7 lg:flex">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.to}
@@ -174,7 +174,7 @@ export function Header({ overlay = true }: { overlay?: boolean }) {
           <button
             type="button"
             onClick={() => setMenuOpen(true)}
-            aria-label="Apri il menu"
+            aria-label={t("a11y.openMenu")}
             aria-expanded={menuOpen}
             className={`p-2 ${solidHeader ? "text-foreground" : "text-primary-foreground"}`}
           >
@@ -192,14 +192,14 @@ export function Header({ overlay = true }: { overlay?: boolean }) {
               <button
                 type="button"
                 onClick={() => setMenuOpen(false)}
-                aria-label="Chiudi il menu"
+                aria-label={t("a11y.closeMenu")}
                 className="p-2"
               >
                 <X aria-hidden="true" className="size-6" />
               </button>
             </div>
           </div>
-          <nav aria-label="Navigazione mobile" className="mt-16 flex flex-col gap-7">
+          <nav aria-label={t("a11y.mobileNavigation")} className="mt-16 flex flex-col gap-7">
             {NAV_ITEMS.map((item) => (
               <Link
                 key={item.to}

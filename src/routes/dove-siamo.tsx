@@ -121,7 +121,7 @@ function DirectionsPage() {
               <div className="flex gap-4 border-t border-border pt-8">
                 <Phone aria-hidden="true" className="mt-1 size-5 shrink-0 text-accent" />
                 <div>
-                  <p className="eyebrow">Telefono</p>
+                  <p className="eyebrow">{t("contact.phone")}</p>
                   <a
                     href={`tel:${CONTACT_PHONE_HREF}`}
                     className="link-underline mt-2 inline-block font-display text-2xl"
@@ -147,7 +147,7 @@ function DirectionsPage() {
               <div className="flex gap-4 border-t border-border pt-8">
                 <Mail aria-hidden="true" className="mt-1 size-5 shrink-0 text-accent" />
                 <div>
-                  <p className="eyebrow">Email</p>
+                  <p className="eyebrow">{t("contact.email")}</p>
                   <a
                     href={`mailto:${CONTACT_EMAIL}`}
                     className="link-underline mt-2 inline-block font-display text-2xl"
