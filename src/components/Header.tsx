@@ -13,7 +13,7 @@ const NAV_ITEMS = [
   { to: "/dove-siamo", label: "nav.directions" },
 ] as const;
 
-function LanguageSwitcher({ onPick }: { onPick?: () => void }) {
+function LanguageSwitcher({ onPick, compact = false }: { onPick?: () => void; compact?: boolean }) {
   const { locale, setLocale } = useI18n();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -44,12 +44,14 @@ function LanguageSwitcher({ onPick }: { onPick?: () => void }) {
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label="Cambia lingua"
-        className="flex items-center gap-2 border border-current/20 bg-background/90 px-3 py-2 text-[0.68rem] uppercase tracking-[0.16em] text-foreground backdrop-blur-sm transition-colors hover:text-accent"
+        className={`flex items-center border border-current/20 bg-background/90 text-[0.68rem] uppercase text-foreground backdrop-blur-sm transition-colors hover:text-accent ${
+          compact ? "gap-1.5 px-2.5 py-2 tracking-[0.12em]" : "gap-2 px-3 py-2 tracking-[0.16em]"
+        }`}
       >
         <span aria-hidden="true" className="text-base leading-none">
           {LOCALE_FLAGS[locale]}
         </span>
-        {LOCALE_NAMES[locale]}
+        {compact ? locale.toUpperCase() : LOCALE_NAMES[locale]}
         <ChevronDown
           aria-hidden="true"
           className={`size-3 transition-transform ${open ? "rotate-180" : ""}`}
@@ -166,29 +168,35 @@ export function Header({ overlay = true }: { overlay?: boolean }) {
           </a>
         </nav>
 
-        <button
-          type="button"
-          onClick={() => setMenuOpen(true)}
-          aria-label="Apri il menu"
-          aria-expanded={menuOpen}
-          className={`p-2 lg:hidden ${solidHeader ? "text-foreground" : "text-primary-foreground"}`}
-        >
-          <Menu aria-hidden="true" className="size-6" />
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <LanguageSwitcher compact />
+          <button
+            type="button"
+            onClick={() => setMenuOpen(true)}
+            aria-label="Apri il menu"
+            aria-expanded={menuOpen}
+            className={`p-2 ${solidHeader ? "text-foreground" : "text-primary-foreground"}`}
+          >
+            <Menu aria-hidden="true" className="size-6" />
+          </button>
+        </div>
       </div>
 
       {menuOpen ? (
         <div className="fixed inset-0 z-50 flex min-h-screen flex-col bg-background px-6 py-5 lg:hidden">
           <div className="flex items-center justify-between">
             <img src={logo} alt="Mulimù" width={321} height={319} className="h-14 w-auto" />
-            <button
-              type="button"
-              onClick={() => setMenuOpen(false)}
-              aria-label="Chiudi il menu"
-              className="p-2"
-            >
-              <X aria-hidden="true" className="size-6" />
-            </button>
+            <div className="flex items-center gap-2">
+              <LanguageSwitcher compact onPick={() => setMenuOpen(false)} />
+              <button
+                type="button"
+                onClick={() => setMenuOpen(false)}
+                aria-label="Chiudi il menu"
+                className="p-2"
+              >
+                <X aria-hidden="true" className="size-6" />
+              </button>
+            </div>
           </div>
           <nav aria-label="Navigazione mobile" className="mt-16 flex flex-col gap-7">
             {NAV_ITEMS.map((item) => (
@@ -203,7 +211,6 @@ export function Header({ overlay = true }: { overlay?: boolean }) {
             ))}
           </nav>
           <div className="mt-auto flex flex-col gap-6 pb-4">
-            <LanguageSwitcher onPick={() => setMenuOpen(false)} />
             <a
               href={BOOKING_URL}
               target="_blank"
