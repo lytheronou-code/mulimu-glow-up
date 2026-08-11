@@ -20,7 +20,7 @@ import house from "@/assets/house.webp";
 import panorama from "@/assets/struttura-6.webp";
 import degustazioni from "@/assets/degustazioni.webp";
 import trekking from "@/assets/trekking.webp";
-import massaggi from "@/assets/struttura-7.webp";
+import massaggi from "@/assets/massaggi.webp";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -30,13 +30,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Guest house a gestione familiare nell'Oltrepò Pavese: due camere con vista sulle colline, degustazioni, trekking e massaggi su richiesta.",
+          "Guest house a gestione familiare nell'Oltrepò Pavese: cinque camere con bagno privato, vista sulle colline, degustazioni, trekking e massaggi su richiesta.",
       },
       { property: "og:title", content: "Mulimù — Guest house nell'Oltrepò Pavese" },
       {
         property: "og:description",
         content:
-          "Due camere con vista sui vigneti, colazione locale e esperienze su misura nelle colline dell'Oltrepò Pavese.",
+          "Una villa storica con cinque camere, vista sui vigneti e esperienze su misura nelle colline dell'Oltrepò Pavese.",
       },
       { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
       { property: "og:url", content: absoluteUrl("/") },

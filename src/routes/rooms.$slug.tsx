@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { Header } from "@/components/Header";
+import { PhotoGallery } from "@/components/PhotoGallery";
 import { Reveal } from "@/components/Reveal";
 import { Footer } from "@/components/Footer";
 import { useI18n } from "@/i18n";
@@ -27,7 +28,7 @@ export const Route = createFileRoute("/rooms/$slug")({
         { property: "og:title", content: `${name} — Mulimù` },
         {
           property: "og:description",
-          content: `Scopri ${name}, una delle due camere della guest house Mulimù nell'Oltrepò Pavese.`,
+          content: `Scopri ${name}, una delle camere della guest house Mulimù nell'Oltrepò Pavese.`,
         },
         { property: "og:type", content: "article" },
         { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
@@ -102,18 +103,14 @@ function RoomPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <p className="eyebrow">{t("rooms.gallery")}</p>
           <span className="rule-accent mt-5" />
-          <div className="mt-10 columns-1 gap-5 sm:columns-2 lg:columns-3">
-            {room.gallery.map((src, i) => (
-              <Reveal key={src} delay={(i % 3) * 100} className="frame-media mb-5 block">
-                <img
-                  src={src}
-                  alt={`${room.name} — ${i + 1}`}
-                  loading="lazy"
-                  className="w-full object-cover"
-                />
-              </Reveal>
-            ))}
-          </div>
+          <PhotoGallery
+            images={room.gallery}
+            altPrefix={room.name}
+            label={`${t("rooms.gallery")} — ${room.name}`}
+            closeLabel={t("gallery.close")}
+            previousLabel={t("gallery.previous")}
+            nextLabel={t("gallery.next")}
+          />
         </div>
       </section>
 

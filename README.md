@@ -53,5 +53,9 @@ L’output server e client viene generato nella cartella `.output`.
 - `/rooms/la-mansarda` e `/rooms/il-giardino` — Dettaglio camere
 - `/dove-siamo` — Indirizzo e contatti
 
+Gli indirizzi storici `/la-mansarda` e `/il-giardino` vengono reindirizzati alle
+nuove pagine di dettaglio, così i collegamenti già pubblicati continuano a
+funzionare.
+
 I contenuti dell’interfaccia sono disponibili in italiano, inglese, francese,
 tedesco e olandese. L’italiano è la lingua predefinita.

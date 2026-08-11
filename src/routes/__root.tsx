@@ -99,9 +99,11 @@ export const Route = createRootRoute({
           telephone: CONTACT_PHONE,
           email: CONTACT_EMAIL,
           image: `${SITE_URL}/og-mulimu.jpg`,
+          numberOfRooms: 5,
           address: {
             "@type": "PostalAddress",
             streetAddress: ADDRESS.street,
+            postalCode: ADDRESS.postalCode,
             addressRegion: "Lombardia",
             addressCountry: "IT",
             addressLocality: ADDRESS.locality,

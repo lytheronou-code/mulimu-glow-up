@@ -12,6 +12,8 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as DoveSiamoRouteImport } from './routes/dove-siamo'
+import { Route as IlGiardinoRouteImport } from './routes/il-giardino'
+import { Route as LaMansardaRouteImport } from './routes/la-mansarda'
 import { Route as LaStrutturaRouteImport } from './routes/la-struttura'
 import { Route as RoomsIndexRouteImport } from './routes/rooms.index'
 import { Route as RoomsSlugRouteImport } from './routes/rooms.$slug'
@@ -29,6 +31,16 @@ const AboutRoute = AboutRouteImport.update({
 const DoveSiamoRoute = DoveSiamoRouteImport.update({
   id: '/dove-siamo',
   path: '/dove-siamo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IlGiardinoRoute = IlGiardinoRouteImport.update({
+  id: '/il-giardino',
+  path: '/il-giardino',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LaMansardaRoute = LaMansardaRouteImport.update({
+  id: '/la-mansarda',
+  path: '/la-mansarda',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LaStrutturaRoute = LaStrutturaRouteImport.update({
@@ -51,6 +63,8 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/dove-siamo': typeof DoveSiamoRoute
+  '/il-giardino': typeof IlGiardinoRoute
+  '/la-mansarda': typeof LaMansardaRoute
   '/la-struttura': typeof LaStrutturaRoute
   '/rooms/$slug': typeof RoomsSlugRoute
   '/rooms/': typeof RoomsIndexRoute
@@ -59,6 +73,8 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/dove-siamo': typeof DoveSiamoRoute
+  '/il-giardino': typeof IlGiardinoRoute
+  '/la-mansarda': typeof LaMansardaRoute
   '/la-struttura': typeof LaStrutturaRoute
   '/rooms/$slug': typeof RoomsSlugRoute
   '/rooms': typeof RoomsIndexRoute
@@ -68,6 +84,8 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/dove-siamo': typeof DoveSiamoRoute
+  '/il-giardino': typeof IlGiardinoRoute
+  '/la-mansarda': typeof LaMansardaRoute
   '/la-struttura': typeof LaStrutturaRoute
   '/rooms/$slug': typeof RoomsSlugRoute
   '/rooms/': typeof RoomsIndexRoute
@@ -78,17 +96,28 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/dove-siamo'
+    | '/il-giardino'
+    | '/la-mansarda'
     | '/la-struttura'
     | '/rooms/$slug'
     | '/rooms/'
   fileRoutesByTo: FileRoutesByTo
   to:
-    '/' | '/about' | '/dove-siamo' | '/la-struttura' | '/rooms/$slug' | '/rooms'
+    | '/'
+    | '/about'
+    | '/dove-siamo'
+    | '/il-giardino'
+    | '/la-mansarda'
+    | '/la-struttura'
+    | '/rooms/$slug'
+    | '/rooms'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/dove-siamo'
+    | '/il-giardino'
+    | '/la-mansarda'
     | '/la-struttura'
     | '/rooms/$slug'
     | '/rooms/'
@@ -98,6 +127,8 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   DoveSiamoRoute: typeof DoveSiamoRoute
+  IlGiardinoRoute: typeof IlGiardinoRoute
+  LaMansardaRoute: typeof LaMansardaRoute
   LaStrutturaRoute: typeof LaStrutturaRoute
   RoomsSlugRoute: typeof RoomsSlugRoute
   RoomsIndexRoute: typeof RoomsIndexRoute
@@ -124,6 +155,20 @@ declare module '@tanstack/react-router' {
       path: '/dove-siamo'
       fullPath: '/dove-siamo'
       preLoaderRoute: typeof DoveSiamoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/il-giardino': {
+      id: '/il-giardino'
+      path: '/il-giardino'
+      fullPath: '/il-giardino'
+      preLoaderRoute: typeof IlGiardinoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/la-mansarda': {
+      id: '/la-mansarda'
+      path: '/la-mansarda'
+      fullPath: '/la-mansarda'
+      preLoaderRoute: typeof LaMansardaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/la-struttura': {
@@ -154,6 +199,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   DoveSiamoRoute: DoveSiamoRoute,
+  IlGiardinoRoute: IlGiardinoRoute,
+  LaMansardaRoute: LaMansardaRoute,
   LaStrutturaRoute: LaStrutturaRoute,
   RoomsSlugRoute: RoomsSlugRoute,
   RoomsIndexRoute: RoomsIndexRoute,

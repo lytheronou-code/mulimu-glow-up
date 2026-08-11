@@ -53,7 +53,7 @@ export function Footer() {
           <p className="text-muted-foreground">
             {ADDRESS.street}
             <br />
-            {ADDRESS.locality}
+            {ADDRESS.postalCode} {ADDRESS.locality}
           </p>
           <a href={`tel:${CONTACT_PHONE_HREF}`} className="link-underline block w-fit">
             {CONTACT_PHONE}

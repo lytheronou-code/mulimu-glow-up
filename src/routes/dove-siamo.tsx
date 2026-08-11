@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Car, Clock3, Mail, MapPin, Phone, Train } from "lucide-react";
 
 import panorama from "@/assets/struttura-6.webp";
 import { Footer } from "@/components/Footer";
@@ -33,6 +33,16 @@ export const Route = createFileRoute("/dove-siamo")({
     links: [{ rel: "canonical", href: absoluteUrl("/dove-siamo") }],
   }),
 });
+
+const TRAVEL_TIMES = [
+  "milan",
+  "linate",
+  "bergamo",
+  "malpensa",
+  "bologna",
+  "lugano",
+  "zurich",
+] as const;
 
 function DirectionsPage() {
   const { t } = useI18n();
@@ -74,6 +84,9 @@ function DirectionsPage() {
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               {t("directions.body")}
             </p>
+            <p className="mt-5 max-w-xl leading-relaxed text-muted-foreground">
+              {t("directions.trainBody")}
+            </p>
             <a href={MAP_URL} target="_blank" rel="noreferrer" className="btn-solid mt-10">
               {t("directions.maps")} <ArrowUpRight aria-hidden="true" className="size-4" />
             </a>
@@ -88,7 +101,7 @@ function DirectionsPage() {
                   <p className="mt-2 font-display text-2xl">
                     {ADDRESS.street}
                     <br />
-                    {ADDRESS.locality}
+                    {ADDRESS.postalCode} {ADDRESS.locality}
                   </p>
                 </div>
               </div>
@@ -121,20 +134,71 @@ function DirectionsPage() {
         </section>
 
         <section className="bg-secondary/60 py-24 lg:py-32">
-          <div className="mx-auto max-w-4xl px-6 text-center lg:px-10">
-            <Reveal>
-              <p className="eyebrow">{t("directions.arrivalEyebrow")}</p>
+          <div className="mx-auto max-w-7xl px-6 lg:px-10">
+            <Reveal className="max-w-3xl">
+              <p className="eyebrow">{t("directions.optionsEyebrow")}</p>
+              <span className="rule-accent mt-5" />
               <h2 className="mt-5 font-display text-[clamp(2.3rem,5vw,4rem)] leading-tight">
-                {t("directions.arrivalTitle")}
+                {t("directions.optionsTitle")}
               </h2>
-              <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-muted-foreground">
-                {t("directions.arrivalBody")}
-              </p>
-              <a href={BOOKING_URL} target="_blank" rel="noreferrer" className="btn-outline mt-10">
-                {t("nav.book")} <ArrowRight aria-hidden="true" className="size-4" />
-              </a>
+            </Reveal>
+
+            <div className="mt-14 grid gap-6 md:grid-cols-2">
+              <Reveal as="article" className="border border-border bg-background p-8 sm:p-10">
+                <Car aria-hidden="true" className="size-6 text-accent" strokeWidth={1.5} />
+                <h3 className="mt-8 font-display text-3xl">{t("directions.carTitle")}</h3>
+                <p className="mt-4 leading-relaxed text-muted-foreground">
+                  {t("directions.carBody")}
+                </p>
+              </Reveal>
+              <Reveal
+                as="article"
+                delay={120}
+                className="border border-border bg-background p-8 sm:p-10"
+              >
+                <Train aria-hidden="true" className="size-6 text-accent" strokeWidth={1.5} />
+                <h3 className="mt-8 font-display text-3xl">{t("directions.trainTitle")}</h3>
+                <p className="mt-4 leading-relaxed text-muted-foreground">
+                  {t("directions.trainCardBody")}
+                </p>
+                <p className="mt-5 border-l border-accent pl-4 text-sm leading-relaxed">
+                  {t("directions.transfer")}
+                </p>
+              </Reveal>
+            </div>
+
+            <Reveal className="mt-20">
+              <div className="flex items-center gap-3">
+                <Clock3 aria-hidden="true" className="size-5 text-accent" />
+                <p className="eyebrow">{t("directions.timesTitle")}</p>
+              </div>
+              <div className="mt-7 grid border-l border-t border-border sm:grid-cols-2 lg:grid-cols-4">
+                {TRAVEL_TIMES.map((place) => (
+                  <div key={place} className="border-b border-r border-border bg-background p-6">
+                    <p className="text-sm text-muted-foreground">
+                      {t(`directions.place.${place}`)}
+                    </p>
+                    <p className="mt-2 font-display text-2xl">{t(`directions.time.${place}`)}</p>
+                  </div>
+                ))}
+              </div>
             </Reveal>
           </div>
+        </section>
+
+        <section className="mx-auto max-w-4xl px-6 py-24 text-center lg:px-10 lg:py-32">
+          <Reveal>
+            <p className="eyebrow">{t("directions.arrivalEyebrow")}</p>
+            <h2 className="mt-5 font-display text-[clamp(2.3rem,5vw,4rem)] leading-tight">
+              {t("directions.arrivalTitle")}
+            </h2>
+            <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-muted-foreground">
+              {t("directions.arrivalBody")}
+            </p>
+            <a href={BOOKING_URL} target="_blank" rel="noreferrer" className="btn-outline mt-10">
+              {t("nav.book")} <ArrowRight aria-hidden="true" className="size-4" />
+            </a>
+          </Reveal>
         </section>
       </main>
 

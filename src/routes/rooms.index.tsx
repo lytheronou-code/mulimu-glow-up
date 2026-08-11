@@ -18,12 +18,13 @@ export const Route = createFileRoute("/rooms/")({
       {
         name: "description",
         content:
-          "Le due camere di Mulimù: La Mansarda con area relax e Il Giardino con balconcino in pietra, entrambe con bagno privato e vista sulle colline.",
+          "Mulimù dispone di cinque camere con bagno privato. Scopri in dettaglio La Mansarda con area relax e Il Giardino con balconcino in pietra.",
       },
       { property: "og:title", content: "Le camere di Mulimù" },
       {
         property: "og:description",
-        content: "Due camere con bagno privato, fibra ottica e vista sui vigneti dell'Oltrepò.",
+        content:
+          "Cinque camere con bagno privato nell'Oltrepò Pavese; fotografie e dettagli di La Mansarda e Il Giardino.",
       },
       { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
       { property: "og:url", content: absoluteUrl("/rooms") },
@@ -68,6 +69,17 @@ function RoomsPage() {
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             {t("rooms.body")}
           </p>
+        </Reveal>
+
+        <Reveal className="mt-14 grid gap-8 border-y border-border py-10 lg:grid-cols-[0.75fr_1.25fr] lg:items-center">
+          <div>
+            <p className="font-display text-6xl leading-none text-accent">5</p>
+            <p className="eyebrow mt-3">{t("rooms.totalLabel")}</p>
+          </div>
+          <div>
+            <h2 className="font-display text-3xl leading-tight">{t("rooms.inventoryTitle")}</h2>
+            <p className="mt-4 leading-relaxed text-muted-foreground">{t("rooms.inventoryBody")}</p>
+          </div>
         </Reveal>
 
         <div className="mt-20 space-y-24 lg:space-y-32">

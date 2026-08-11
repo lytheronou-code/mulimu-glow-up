@@ -55,6 +55,12 @@ const it: Dict = {
   "struttura.p3":
     "Gli spazi esterni e le aree condivise sono stati curati per offrire quiete, comfort e un contatto diretto con la natura che circonda la proprietà.",
   "struttura.gallery": "Galleria",
+  "struttura.fact1.value": "XVI",
+  "struttura.fact1.label": "Secolo della villa",
+  "struttura.fact2.value": "2.000 m²",
+  "struttura.fact2.label": "Giardino",
+  "struttura.fact3.value": "5",
+  "struttura.fact3.label": "Camere con bagno privato",
   "nav.contact": "Contatti",
   "nav.book": "Prenota",
 
@@ -90,9 +96,36 @@ const it: Dict = {
   "directions.eyebrow": "Dove siamo",
   "directions.addressTitle": "Nel cuore della Val Versa",
   "directions.body":
-    "Mulimù si trova a Montecalvo Versiggia, tra vigneti, piccoli borghi e strade panoramiche dell’Oltrepò Pavese. Apri l’indirizzo completo nel tuo navigatore per arrivare direttamente alla guest house.",
+    "Consigliamo di raggiungere la struttura con un mezzo privato o a noleggio per essere indipendenti nell’esplorazione della zona, ricca di borghi incantevoli, castelli, agriturismi, ristoranti e cantine vinicole.",
+  "directions.trainBody":
+    "In alternativa, è possibile arrivare in treno fino alla stazione FS di Stradella, con collegamento diretto da Milano ogni ora. La stazione dista circa 15 minuti in auto e possiamo organizzare un servizio di trasferimento.",
   "directions.imageAlt": "Panorama della Val Versa visto da Mulimù",
   "directions.maps": "Apri in Google Maps",
+  "directions.optionsEyebrow": "Organizza il viaggio",
+  "directions.optionsTitle": "In auto o in treno, senza fretta.",
+  "directions.carTitle": "In auto",
+  "directions.carBody":
+    "L’auto è la soluzione consigliata per raggiungere Mulimù e muoversi liberamente tra borghi, castelli, ristoranti e cantine dell’Oltrepò Pavese.",
+  "directions.trainTitle": "In treno",
+  "directions.trainCardBody":
+    "La stazione FS più vicina è Stradella, collegata direttamente con Milano ogni ora. Da Stradella, Mulimù dista circa 15 minuti in auto.",
+  "directions.transfer":
+    "Contattaci in anticipo: possiamo organizzare il trasferimento dalla stazione.",
+  "directions.timesTitle": "Tempi indicativi in auto",
+  "directions.place.milan": "Milano",
+  "directions.place.malpensa": "Aeroporto di Malpensa",
+  "directions.place.linate": "Aeroporto di Linate",
+  "directions.place.bergamo": "Aeroporto di Bergamo",
+  "directions.place.bologna": "Bologna",
+  "directions.place.lugano": "Lugano",
+  "directions.place.zurich": "Zurigo",
+  "directions.time.milan": "1 ora e 10 minuti",
+  "directions.time.malpensa": "2 ore",
+  "directions.time.linate": "1 ora",
+  "directions.time.bergamo": "1 ora e 40 minuti",
+  "directions.time.bologna": "2 ore e 30 minuti",
+  "directions.time.lugano": "2 ore e 20 minuti",
+  "directions.time.zurich": "5 ore",
   "directions.arrivalEyebrow": "Prima dell’arrivo",
   "directions.arrivalTitle": "Siamo qui per aiutarti",
   "directions.arrivalBody":
@@ -110,17 +143,21 @@ const it: Dict = {
     "Una piccola guest house a gestione familiare situata nelle colline dell’Oltrepò Pavese, Mulimù ti invita in uno spazio sereno e rilassante, che speriamo possa farti sentire a casa.",
   "intro.body2":
     "Questi luoghi offrono un'esperienza unica, con panorami che cambiano con le stagioni e una ricca tradizione vinicola da scoprire.",
-  "intro.stat1": "Camere",
-  "intro.stat1v": "2",
-  "intro.stat2": "Ospiti",
-  "intro.stat2v": "fino a 5",
-  "intro.stat3": "Vista",
-  "intro.stat3v": "colline e vigneti",
+  "intro.stat1": "Camere con bagno",
+  "intro.stat1v": "5",
+  "intro.stat2": "Giardino",
+  "intro.stat2v": "2.000 m²",
+  "intro.stat3": "Dimora",
+  "intro.stat3v": "XVI secolo",
 
   "rooms.eyebrow": "Camere",
   "rooms.title": "Esplora le nostre Camere",
   "rooms.body":
     "Svegliati con la splendida vista delle colline ricoperte di vigneti. Le nostre camere offrono un rifugio tranquillo, complete di letti comodi, arredi moderni e pezzi d'epoca recuperati con cura e dedizione.",
+  "rooms.totalLabel": "Camere con bagno privato",
+  "rooms.inventoryTitle": "Una dimora raccolta, cinque camere",
+  "rooms.inventoryBody":
+    "La casa dispone complessivamente di cinque camere da letto con bagno privato dedicate agli ospiti. Qui puoi conoscere nel dettaglio La Mansarda e Il Giardino, con tutte le fotografie e le informazioni pubblicate.",
   "rooms.cta": "Esplora le camere",
   "rooms.detail": "Dettagli",
   "rooms.gallery": "Galleria",
@@ -147,7 +184,7 @@ const it: Dict = {
   "place.eyebrow": "Il luogo",
   "place.title": "Oltrepò Pavese",
   "place.body":
-    "Dolci pendii, vigneti a perdita d'occhio e panorami che cambiano con le stagioni. Una terra di vino antica e ancora autentica, a poco più di un'ora da Milano.",
+    "Immergiti nella bellezza incantevole delle colline dell’Oltrepò Pavese, dove dolci pendii e vigneti lussureggianti si fondono in un paesaggio mozzafiato. Questi luoghi offrono un’esperienza unica, con panorami che cambiano con le stagioni e una ricca tradizione vinicola da scoprire.",
   "place.p1.title": "Vino",
   "place.p1.body": "Una delle patrie italiane del Pinot Nero e delle bollicine metodo classico.",
   "place.p2.title": "Tavola",
@@ -169,6 +206,9 @@ const it: Dict = {
   "footer.tagline": "Guest house a gestione familiare nelle colline dell'Oltrepò Pavese.",
   "footer.rights": "Tutti i diritti riservati.",
   "footer.lang": "Lingua",
+  "gallery.close": "Chiudi la galleria",
+  "gallery.previous": "Fotografia precedente",
+  "gallery.next": "Fotografia successiva",
 };
 
 const en: Dict = {
@@ -188,6 +228,12 @@ const en: Dict = {
   "struttura.p3":
     "The outdoor spaces and shared areas have been designed to offer quiet, comfort and a direct contact with the nature surrounding the property.",
   "struttura.gallery": "Gallery",
+  "struttura.fact1.value": "16th",
+  "struttura.fact1.label": "Century villa",
+  "struttura.fact2.value": "2,000 sqm",
+  "struttura.fact2.label": "Garden",
+  "struttura.fact3.value": "5",
+  "struttura.fact3.label": "En-suite guest rooms",
   "nav.contact": "Contact",
   "nav.book": "Book",
 
@@ -223,9 +269,35 @@ const en: Dict = {
   "directions.eyebrow": "Where we are",
   "directions.addressTitle": "In the heart of Val Versa",
   "directions.body":
-    "Mulimù is in Montecalvo Versiggia, among vineyards, small villages and the panoramic roads of the Oltrepò Pavese. Open the full address in your navigation app to reach the guest house directly.",
+    "We recommend reaching the property by private or rental car, so you can explore the area independently, with its enchanting villages, castles, farm restaurants, restaurants and wineries.",
+  "directions.trainBody":
+    "Alternatively, take the train to Stradella station, with a direct service from Milan every hour. The station is about 15 minutes away by car and we can arrange a transfer.",
   "directions.imageAlt": "View of Val Versa from Mulimù",
   "directions.maps": "Open in Google Maps",
+  "directions.optionsEyebrow": "Plan your journey",
+  "directions.optionsTitle": "By car or train, at an unhurried pace.",
+  "directions.carTitle": "By car",
+  "directions.carBody":
+    "A car is the recommended way to reach Mulimù and move freely among the villages, castles, restaurants and wineries of the Oltrepò Pavese.",
+  "directions.trainTitle": "By train",
+  "directions.trainCardBody":
+    "The nearest railway station is Stradella, with direct trains from Milan every hour. Mulimù is about a 15-minute drive from the station.",
+  "directions.transfer": "Contact us in advance: we can arrange your transfer from the station.",
+  "directions.timesTitle": "Approximate driving times",
+  "directions.place.milan": "Milan",
+  "directions.place.malpensa": "Malpensa Airport",
+  "directions.place.linate": "Linate Airport",
+  "directions.place.bergamo": "Bergamo Airport",
+  "directions.place.bologna": "Bologna",
+  "directions.place.lugano": "Lugano",
+  "directions.place.zurich": "Zurich",
+  "directions.time.milan": "1 hour 10 minutes",
+  "directions.time.malpensa": "2 hours",
+  "directions.time.linate": "1 hour",
+  "directions.time.bergamo": "1 hour 40 minutes",
+  "directions.time.bologna": "2 hours 30 minutes",
+  "directions.time.lugano": "2 hours 20 minutes",
+  "directions.time.zurich": "5 hours",
   "directions.arrivalEyebrow": "Before you arrive",
   "directions.arrivalTitle": "We are here to help",
   "directions.arrivalBody":
@@ -243,17 +315,21 @@ const en: Dict = {
     "A small family-run guest house set in the hills of the Oltrepò Pavese, Mulimù welcomes you into a serene, relaxing space that we hope will feel like home.",
   "intro.body2":
     "These places offer a unique experience, with views that change with the seasons and a rich winemaking tradition to discover.",
-  "intro.stat1": "Rooms",
-  "intro.stat1v": "2",
-  "intro.stat2": "Guests",
-  "intro.stat2v": "up to 5",
-  "intro.stat3": "View",
-  "intro.stat3v": "hills and vineyards",
+  "intro.stat1": "En-suite rooms",
+  "intro.stat1v": "5",
+  "intro.stat2": "Garden",
+  "intro.stat2v": "2,000 sqm",
+  "intro.stat3": "Residence",
+  "intro.stat3v": "16th century",
 
   "rooms.eyebrow": "Rooms",
   "rooms.title": "Explore our Rooms",
   "rooms.body":
     "Wake up to the wonderful view of vineyard-covered hills. Our rooms offer a peaceful retreat, complete with comfortable beds, modern furnishings and vintage pieces restored with care and dedication.",
+  "rooms.totalLabel": "Rooms with private bathrooms",
+  "rooms.inventoryTitle": "An intimate home, five guest rooms",
+  "rooms.inventoryBody":
+    "The house has five guest bedrooms, each with a private bathroom. Here you can explore La Mansarda and Il Giardino in detail, with every published photograph and piece of information.",
   "rooms.cta": "Explore the rooms",
   "rooms.detail": "Details",
   "rooms.gallery": "Gallery",
@@ -280,7 +356,7 @@ const en: Dict = {
   "place.eyebrow": "The place",
   "place.title": "Oltrepò Pavese",
   "place.body":
-    "Gentle slopes, vineyards as far as the eye can see and views that shift with the seasons. An ancient, still authentic wine country just over an hour from Milan.",
+    "Immerse yourself in the enchanting beauty of the Oltrepò Pavese hills, where gentle slopes and lush vineyards merge into a breathtaking landscape. This land offers a unique experience, with views that change with the seasons and a rich winemaking tradition to discover.",
   "place.p1.title": "Wine",
   "place.p1.body": "One of Italy's homes of Pinot Noir and classic-method sparkling wines.",
   "place.p2.title": "Table",
@@ -302,6 +378,9 @@ const en: Dict = {
   "footer.tagline": "Family-run guest house in the hills of the Oltrepò Pavese.",
   "footer.rights": "All rights reserved.",
   "footer.lang": "Language",
+  "gallery.close": "Close gallery",
+  "gallery.previous": "Previous photograph",
+  "gallery.next": "Next photograph",
 };
 
 const fr: Dict = {
@@ -321,6 +400,12 @@ const fr: Dict = {
   "struttura.p3":
     "Les espaces extérieurs et les parties communes ont été soignés pour offrir calme, confort et un contact direct avec la nature qui entoure la propriété.",
   "struttura.gallery": "Galerie",
+  "struttura.fact1.value": "XVIe",
+  "struttura.fact1.label": "Siècle de la villa",
+  "struttura.fact2.value": "2 000 m²",
+  "struttura.fact2.label": "Jardin",
+  "struttura.fact3.value": "5",
+  "struttura.fact3.label": "Chambres avec salle de bain",
   "nav.contact": "Contact",
   "nav.book": "Réserver",
 
@@ -356,9 +441,36 @@ const fr: Dict = {
   "directions.eyebrow": "Où nous sommes",
   "directions.addressTitle": "Au cœur de la Val Versa",
   "directions.body":
-    "Mulimù se trouve à Montecalvo Versiggia, parmi les vignes, les petits villages et les routes panoramiques de l’Oltrepò Pavese. Ouvrez l’adresse complète dans votre GPS pour arriver directement à la maison d’hôtes.",
+    "Nous vous conseillons de rejoindre la maison en voiture, personnelle ou de location, afin d’explorer librement cette région riche en villages enchanteurs, châteaux, agritourismes, restaurants et domaines viticoles.",
+  "directions.trainBody":
+    "Vous pouvez également prendre le train jusqu’à la gare de Stradella, desservie directement depuis Milan toutes les heures. La gare se trouve à environ 15 minutes en voiture et nous pouvons organiser un transfert.",
   "directions.imageAlt": "Panorama de la Val Versa depuis Mulimù",
   "directions.maps": "Ouvrir dans Google Maps",
+  "directions.optionsEyebrow": "Organiser le voyage",
+  "directions.optionsTitle": "En voiture ou en train, sans se presser.",
+  "directions.carTitle": "En voiture",
+  "directions.carBody":
+    "La voiture est la solution recommandée pour rejoindre Mulimù et circuler librement entre les villages, châteaux, restaurants et domaines viticoles de l’Oltrepò Pavese.",
+  "directions.trainTitle": "En train",
+  "directions.trainCardBody":
+    "La gare la plus proche est celle de Stradella, reliée directement à Milan toutes les heures. Mulimù se trouve à environ 15 minutes en voiture de la gare.",
+  "directions.transfer":
+    "Contactez-nous à l’avance : nous pouvons organiser le transfert depuis la gare.",
+  "directions.timesTitle": "Temps de trajet indicatifs en voiture",
+  "directions.place.milan": "Milan",
+  "directions.place.malpensa": "Aéroport de Malpensa",
+  "directions.place.linate": "Aéroport de Linate",
+  "directions.place.bergamo": "Aéroport de Bergame",
+  "directions.place.bologna": "Bologne",
+  "directions.place.lugano": "Lugano",
+  "directions.place.zurich": "Zurich",
+  "directions.time.milan": "1 heure 10 minutes",
+  "directions.time.malpensa": "2 heures",
+  "directions.time.linate": "1 heure",
+  "directions.time.bergamo": "1 heure 40 minutes",
+  "directions.time.bologna": "2 heures 30 minutes",
+  "directions.time.lugano": "2 heures 20 minutes",
+  "directions.time.zurich": "5 heures",
   "directions.arrivalEyebrow": "Avant votre arrivée",
   "directions.arrivalTitle": "Nous sommes là pour vous aider",
   "directions.arrivalBody":
@@ -376,17 +488,21 @@ const fr: Dict = {
     "Petite maison d'hôtes familiale située dans les collines de l'Oltrepò Pavese, Mulimù vous accueille dans un espace serein et relaxant, où nous espérons que vous vous sentirez comme chez vous.",
   "intro.body2":
     "Ces lieux offrent une expérience unique, avec des panoramas qui changent au fil des saisons et une riche tradition viticole à découvrir.",
-  "intro.stat1": "Chambres",
-  "intro.stat1v": "2",
-  "intro.stat2": "Voyageurs",
-  "intro.stat2v": "jusqu'à 5",
-  "intro.stat3": "Vue",
-  "intro.stat3v": "collines et vignobles",
+  "intro.stat1": "Chambres avec salle de bain",
+  "intro.stat1v": "5",
+  "intro.stat2": "Jardin",
+  "intro.stat2v": "2 000 m²",
+  "intro.stat3": "Demeure",
+  "intro.stat3v": "XVIe siècle",
 
   "rooms.eyebrow": "Chambres",
   "rooms.title": "Explorez nos chambres",
   "rooms.body":
     "Réveillez-vous avec la superbe vue des collines couvertes de vignes. Nos chambres offrent un refuge tranquille, avec des lits confortables, un mobilier moderne et des pièces anciennes restaurées avec soin et dévouement.",
+  "rooms.totalLabel": "Chambres avec salle de bain privée",
+  "rooms.inventoryTitle": "Une demeure intime, cinq chambres",
+  "rooms.inventoryBody":
+    "La maison compte cinq chambres d’hôtes, toutes dotées d’une salle de bain privée. Découvrez ici La Mansarda et Il Giardino en détail, avec toutes les photographies et informations publiées.",
   "rooms.cta": "Explorer les chambres",
   "rooms.detail": "Détails",
   "rooms.gallery": "Galerie",
@@ -413,7 +529,7 @@ const fr: Dict = {
   "place.eyebrow": "Le lieu",
   "place.title": "Oltrepò Pavese",
   "place.body":
-    "Des pentes douces, des vignobles à perte de vue et des panoramas qui changent avec les saisons. Une terre de vin ancienne et encore authentique, à un peu plus d'une heure de Milan.",
+    "Plongez dans la beauté enchanteresse des collines de l’Oltrepò Pavese, où les pentes douces et les vignobles luxuriants se fondent dans un paysage à couper le souffle. Ces terres offrent une expérience unique, avec des panoramas qui changent au fil des saisons et une riche tradition viticole à découvrir.",
   "place.p1.title": "Vin",
   "place.p1.body": "L'une des patries italiennes du Pinot Noir et des bulles méthode classique.",
   "place.p2.title": "Table",
@@ -435,6 +551,9 @@ const fr: Dict = {
   "footer.tagline": "Maison d'hôtes familiale dans les collines de l'Oltrepò Pavese.",
   "footer.rights": "Tous droits réservés.",
   "footer.lang": "Langue",
+  "gallery.close": "Fermer la galerie",
+  "gallery.previous": "Photographie précédente",
+  "gallery.next": "Photographie suivante",
 };
 
 const de: Dict = {
@@ -454,6 +573,12 @@ const de: Dict = {
   "struttura.p3":
     "Die Außenbereiche und Gemeinschaftsflächen wurden mit Bedacht gestaltet und bieten Ruhe, Komfort und den direkten Kontakt zur Natur, die das Anwesen umgibt.",
   "struttura.gallery": "Galerie",
+  "struttura.fact1.value": "16.",
+  "struttura.fact1.label": "Jahrhundert der Villa",
+  "struttura.fact2.value": "2.000 m²",
+  "struttura.fact2.label": "Garten",
+  "struttura.fact3.value": "5",
+  "struttura.fact3.label": "Zimmer mit eigenem Bad",
   "nav.contact": "Kontakt",
   "nav.book": "Buchen",
 
@@ -489,9 +614,36 @@ const de: Dict = {
   "directions.eyebrow": "Wo wir sind",
   "directions.addressTitle": "Im Herzen des Val Versa",
   "directions.body":
-    "Mulimù liegt in Montecalvo Versiggia, zwischen Weinbergen, kleinen Dörfern und Panoramastraßen des Oltrepò Pavese. Öffnen Sie die vollständige Adresse in Ihrer Navigation, um direkt zum Gästehaus zu gelangen.",
+    "Wir empfehlen die Anreise mit dem eigenen Auto oder einem Mietwagen, damit Sie die Region mit ihren zauberhaften Dörfern, Burgen, Agriturismi, Restaurants und Weingütern unabhängig erkunden können.",
+  "directions.trainBody":
+    "Alternativ fahren Sie mit dem Zug zum Bahnhof Stradella, der stündlich direkt von Mailand erreichbar ist. Der Bahnhof liegt etwa 15 Autominuten entfernt; wir können einen Transfer organisieren.",
   "directions.imageAlt": "Blick auf das Val Versa von Mulimù",
   "directions.maps": "In Google Maps öffnen",
+  "directions.optionsEyebrow": "Reise planen",
+  "directions.optionsTitle": "Mit Auto oder Zug, ganz ohne Eile.",
+  "directions.carTitle": "Mit dem Auto",
+  "directions.carBody":
+    "Das Auto ist die empfohlene Wahl, um Mulimù zu erreichen und sich frei zwischen den Dörfern, Burgen, Restaurants und Weingütern des Oltrepò Pavese zu bewegen.",
+  "directions.trainTitle": "Mit dem Zug",
+  "directions.trainCardBody":
+    "Der nächstgelegene Bahnhof ist Stradella, mit stündlichen Direktverbindungen von Mailand. Von dort sind es etwa 15 Minuten mit dem Auto bis Mulimù.",
+  "directions.transfer":
+    "Kontaktieren Sie uns vorab: Wir können den Transfer vom Bahnhof organisieren.",
+  "directions.timesTitle": "Ungefähre Fahrzeiten mit dem Auto",
+  "directions.place.milan": "Mailand",
+  "directions.place.malpensa": "Flughafen Malpensa",
+  "directions.place.linate": "Flughafen Linate",
+  "directions.place.bergamo": "Flughafen Bergamo",
+  "directions.place.bologna": "Bologna",
+  "directions.place.lugano": "Lugano",
+  "directions.place.zurich": "Zürich",
+  "directions.time.milan": "1 Stunde 10 Minuten",
+  "directions.time.malpensa": "2 Stunden",
+  "directions.time.linate": "1 Stunde",
+  "directions.time.bergamo": "1 Stunde 40 Minuten",
+  "directions.time.bologna": "2 Stunden 30 Minuten",
+  "directions.time.lugano": "2 Stunden 20 Minuten",
+  "directions.time.zurich": "5 Stunden",
   "directions.arrivalEyebrow": "Vor Ihrer Ankunft",
   "directions.arrivalTitle": "Wir helfen Ihnen gerne",
   "directions.arrivalBody":
@@ -509,17 +661,21 @@ const de: Dict = {
     "Ein kleines familiengeführtes Gästehaus in den Hügeln des Oltrepò Pavese: Mulimù empfängt Sie in einer ruhigen, entspannten Umgebung, in der Sie sich wie zu Hause fühlen sollen.",
   "intro.body2":
     "Diese Orte bieten ein einzigartiges Erlebnis, mit Panoramen, die sich mit den Jahreszeiten wandeln, und einer reichen Weintradition zum Entdecken.",
-  "intro.stat1": "Zimmer",
-  "intro.stat1v": "2",
-  "intro.stat2": "Gäste",
-  "intro.stat2v": "bis zu 5",
-  "intro.stat3": "Aussicht",
-  "intro.stat3v": "Hügel und Weinberge",
+  "intro.stat1": "Zimmer mit Bad",
+  "intro.stat1v": "5",
+  "intro.stat2": "Garten",
+  "intro.stat2v": "2.000 m²",
+  "intro.stat3": "Anwesen",
+  "intro.stat3v": "16. Jahrhundert",
 
   "rooms.eyebrow": "Zimmer",
   "rooms.title": "Entdecken Sie unsere Zimmer",
   "rooms.body":
     "Wachen Sie mit dem herrlichen Blick auf die weinbedeckten Hügel auf. Unsere Zimmer sind ein ruhiger Rückzugsort mit bequemen Betten, modernem Mobiliar und liebevoll restaurierten antiken Stücken.",
+  "rooms.totalLabel": "Zimmer mit eigenem Bad",
+  "rooms.inventoryTitle": "Ein intimes Haus, fünf Gästezimmer",
+  "rooms.inventoryBody":
+    "Das Haus verfügt über fünf Gästezimmer, jeweils mit eigenem Bad. Hier können Sie La Mansarda und Il Giardino mit allen veröffentlichten Fotos und Informationen im Detail entdecken.",
   "rooms.cta": "Zimmer ansehen",
   "rooms.detail": "Details",
   "rooms.gallery": "Galerie",
@@ -545,7 +701,7 @@ const de: Dict = {
   "place.eyebrow": "Die Region",
   "place.title": "Oltrepò Pavese",
   "place.body":
-    "Sanfte Hänge, Weinberge bis zum Horizont und Panoramen, die sich mit den Jahreszeiten wandeln. Ein altes, noch authentisches Weinland, gut eine Stunde von Mailand entfernt.",
+    "Tauchen Sie ein in die bezaubernde Schönheit der Hügel des Oltrepò Pavese, wo sanfte Hänge und üppige Weinberge zu einer atemberaubenden Landschaft verschmelzen. Diese Region bietet ein einzigartiges Erlebnis mit Ausblicken, die sich mit den Jahreszeiten verändern, und einer reichen Weintradition.",
   "place.p1.title": "Wein",
   "place.p1.body": "Eine der italienischen Heimaten des Pinot Nero und klassischer Schaumweine.",
   "place.p2.title": "Küche",
@@ -567,6 +723,9 @@ const de: Dict = {
   "footer.tagline": "Familiengeführtes Gästehaus in den Hügeln des Oltrepò Pavese.",
   "footer.rights": "Alle Rechte vorbehalten.",
   "footer.lang": "Sprache",
+  "gallery.close": "Galerie schließen",
+  "gallery.previous": "Vorheriges Foto",
+  "gallery.next": "Nächstes Foto",
 };
 
 const nl: Dict = {
@@ -586,6 +745,12 @@ const nl: Dict = {
   "struttura.p3":
     "De buitenruimtes en gemeenschappelijke ruimtes zijn met zorg ingericht om rust, comfort en direct contact met de natuur rondom het pand te bieden.",
   "struttura.gallery": "Galerij",
+  "struttura.fact1.value": "16e",
+  "struttura.fact1.label": "Eeuw van de villa",
+  "struttura.fact2.value": "2.000 m²",
+  "struttura.fact2.label": "Tuin",
+  "struttura.fact3.value": "5",
+  "struttura.fact3.label": "Kamers met eigen badkamer",
   "nav.contact": "Contact",
   "nav.book": "Boeken",
 
@@ -621,9 +786,36 @@ const nl: Dict = {
   "directions.eyebrow": "Waar we zijn",
   "directions.addressTitle": "In het hart van Val Versa",
   "directions.body":
-    "Mulimù ligt in Montecalvo Versiggia, tussen wijngaarden, kleine dorpen en panoramische wegen van de Oltrepò Pavese. Open het volledige adres in je navigatie om rechtstreeks bij het guest house aan te komen.",
+    "Wij raden aan om met een eigen auto of huurauto te komen, zodat je de streek met haar charmante dorpen, kastelen, agriturismi, restaurants en wijnhuizen zelfstandig kunt verkennen.",
+  "directions.trainBody":
+    "Je kunt ook met de trein naar station Stradella reizen, met elk uur een rechtstreekse verbinding vanuit Milaan. Het station ligt op ongeveer 15 minuten rijden en wij kunnen een transfer organiseren.",
   "directions.imageAlt": "Uitzicht over Val Versa vanaf Mulimù",
   "directions.maps": "Openen in Google Maps",
+  "directions.optionsEyebrow": "Plan je reis",
+  "directions.optionsTitle": "Met de auto of trein, zonder haast.",
+  "directions.carTitle": "Met de auto",
+  "directions.carBody":
+    "De auto is de aanbevolen manier om Mulimù te bereiken en vrij langs de dorpen, kastelen, restaurants en wijnhuizen van de Oltrepò Pavese te reizen.",
+  "directions.trainTitle": "Met de trein",
+  "directions.trainCardBody":
+    "Het dichtstbijzijnde station is Stradella, met elk uur een rechtstreekse trein vanuit Milaan. Vanaf het station is het ongeveer 15 minuten rijden naar Mulimù.",
+  "directions.transfer":
+    "Neem vooraf contact met ons op: wij kunnen de transfer vanaf het station organiseren.",
+  "directions.timesTitle": "Geschatte reistijden met de auto",
+  "directions.place.milan": "Milaan",
+  "directions.place.malpensa": "Luchthaven Malpensa",
+  "directions.place.linate": "Luchthaven Linate",
+  "directions.place.bergamo": "Luchthaven Bergamo",
+  "directions.place.bologna": "Bologna",
+  "directions.place.lugano": "Lugano",
+  "directions.place.zurich": "Zürich",
+  "directions.time.milan": "1 uur 10 minuten",
+  "directions.time.malpensa": "2 uur",
+  "directions.time.linate": "1 uur",
+  "directions.time.bergamo": "1 uur 40 minuten",
+  "directions.time.bologna": "2 uur 30 minuten",
+  "directions.time.lugano": "2 uur 20 minuten",
+  "directions.time.zurich": "5 uur",
   "directions.arrivalEyebrow": "Voor je aankomst",
   "directions.arrivalTitle": "We helpen je graag",
   "directions.arrivalBody":
@@ -641,17 +833,21 @@ const nl: Dict = {
     "Een klein familiaal guest house in de heuvels van de Oltrepò Pavese: Mulimù nodigt je uit in een serene en ontspannen omgeving, waar je je hopelijk thuis voelt.",
   "intro.body2":
     "Deze plek biedt een unieke ervaring, met panorama's die met de seizoenen veranderen en een rijke wijntraditie om te ontdekken.",
-  "intro.stat1": "Kamers",
-  "intro.stat1v": "2",
-  "intro.stat2": "Gasten",
-  "intro.stat2v": "tot 5",
-  "intro.stat3": "Uitzicht",
-  "intro.stat3v": "heuvels en wijngaarden",
+  "intro.stat1": "Kamers met badkamer",
+  "intro.stat1v": "5",
+  "intro.stat2": "Tuin",
+  "intro.stat2v": "2.000 m²",
+  "intro.stat3": "Landhuis",
+  "intro.stat3v": "16e eeuw",
 
   "rooms.eyebrow": "Kamers",
   "rooms.title": "Ontdek onze kamers",
   "rooms.body":
     "Word wakker met een prachtig uitzicht op de wijnheuvels. Onze kamers zijn een rustige plek met comfortabele bedden, modern meubilair en zorgvuldig gerestaureerde antieke stukken.",
+  "rooms.totalLabel": "Kamers met eigen badkamer",
+  "rooms.inventoryTitle": "Een intiem huis, vijf gastenkamers",
+  "rooms.inventoryBody":
+    "Het huis heeft vijf gastenkamers, elk met een eigen badkamer. Hier ontdek je La Mansarda en Il Giardino in detail, met alle gepubliceerde foto's en informatie.",
   "rooms.cta": "Bekijk de kamers",
   "rooms.detail": "Details",
   "rooms.gallery": "Galerij",
@@ -678,7 +874,7 @@ const nl: Dict = {
   "place.eyebrow": "De streek",
   "place.title": "Oltrepò Pavese",
   "place.body":
-    "Zachte hellingen, wijngaarden tot aan de horizon en panorama's die met de seizoenen veranderen. Een oud en nog authentiek wijnland, ruim een uur van Milaan.",
+    "Dompel je onder in de betoverende schoonheid van de heuvels van de Oltrepò Pavese, waar zachte hellingen en weelderige wijngaarden samenvloeien tot een adembenemend landschap. Deze streek biedt een unieke ervaring, met panorama's die met de seizoenen veranderen en een rijke wijntraditie om te ontdekken.",
   "place.p1.title": "Wijn",
   "place.p1.body":
     "Een van de Italiaanse bakermatten van Pinot Nero en klassieke mousserende wijnen.",
@@ -701,6 +897,9 @@ const nl: Dict = {
   "footer.tagline": "Familiaal guest house in de heuvels van de Oltrepò Pavese.",
   "footer.rights": "Alle rechten voorbehouden.",
   "footer.lang": "Taal",
+  "gallery.close": "Galerij sluiten",
+  "gallery.previous": "Vorige foto",
+  "gallery.next": "Volgende foto",
 };
 
 const DICTS: Record<Locale, Dict> = { it, en, fr, de, nl };
