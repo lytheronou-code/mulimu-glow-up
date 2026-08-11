@@ -166,13 +166,13 @@ function DirectionsPage() {
               <h2 className="text-center font-display text-[clamp(2.5rem,6vw,4.75rem)] leading-none">
                 Mulimù
               </h2>
-              <div className="relative mt-10 overflow-hidden border border-border bg-muted shadow-[0_30px_80px_-45px_rgba(31,37,30,0.45)]">
+              <div className="relative mx-auto mt-10 max-w-3xl overflow-hidden border border-border bg-muted shadow-[0_30px_80px_-45px_rgba(31,37,30,0.45)]">
                 <iframe
                   src={MAP_EMBED_URL}
                   title="Mulimù — Google Maps"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  className="h-[430px] w-full border-0 sm:h-[520px]"
+                  className="h-[430px] w-full border-0 sm:h-[560px] lg:h-[620px]"
                   allowFullScreen
                 />
               </div>
