@@ -23,6 +23,7 @@ import {
   CONTACT_PHONE_HREF,
   MAP_EMBED_URL,
   MAP_URL,
+  SOCIAL_IMAGE_URL,
   absoluteUrl,
   getWhatsAppUrl,
 } from "@/data/site";
@@ -39,7 +40,7 @@ export const Route = createFileRoute("/dove-siamo")({
           "Indirizzo, contatti e indicazioni per raggiungere Mulimù a Montecalvo Versiggia, tra le colline dell'Oltrepò Pavese.",
       },
       { property: "og:title", content: "Come raggiungere Mulimù" },
-      { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
+      { property: "og:image", content: SOCIAL_IMAGE_URL },
       { property: "og:url", content: absoluteUrl("/dove-siamo") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/dove-siamo") }],

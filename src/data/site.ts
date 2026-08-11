@@ -1,4 +1,5 @@
 export const SITE_URL = "https://mulimu.it";
+export const SOCIAL_IMAGE_URL = "https://mulimu-glow-up.vercel.app/og-mulimu.jpg?v=2";
 
 export const CONTACT_EMAIL = "info@mulimu.it";
 export const CONTACT_PHONE = "+39 378 011 1325";

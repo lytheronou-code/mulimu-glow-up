@@ -6,7 +6,7 @@ import property from "@/assets/struttura-8.webp";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Reveal } from "@/components/Reveal";
-import { BOOKING_URL, absoluteUrl } from "@/data/site";
+import { BOOKING_URL, SOCIAL_IMAGE_URL, absoluteUrl } from "@/data/site";
 import { useI18n } from "@/i18n";
 
 export const Route = createFileRoute("/about")({
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/about")({
         content:
           "Da Milano alle colline dell'Oltrepò Pavese: scopri le persone e i valori dietro Mulimù.",
       },
-      { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
+      { property: "og:image", content: SOCIAL_IMAGE_URL },
       { property: "og:url", content: absoluteUrl("/about") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/about") }],

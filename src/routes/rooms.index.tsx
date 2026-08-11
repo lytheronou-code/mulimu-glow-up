@@ -6,7 +6,7 @@ import { Reveal } from "@/components/Reveal";
 import { Footer } from "@/components/Footer";
 import { useI18n } from "@/i18n";
 import { ROOMS } from "@/data/rooms";
-import { absoluteUrl } from "@/data/site";
+import { SOCIAL_IMAGE_URL, absoluteUrl } from "@/data/site";
 
 import roomsCover from "@/assets/rooms-cover.webp";
 
@@ -26,7 +26,7 @@ export const Route = createFileRoute("/rooms/")({
         content:
           "Cinque camere con bagno privato nell'Oltrepò Pavese; fotografie e dettagli di La Mansarda e Il Giardino.",
       },
-      { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
+      { property: "og:image", content: SOCIAL_IMAGE_URL },
       { property: "og:url", content: absoluteUrl("/rooms") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/rooms") }],

@@ -3,6 +3,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import logo from "@/assets/mulimu-logo.png";
+import logoLight from "@/assets/mulimu-logo-light.png";
 import { BOOKING_URL } from "@/data/site";
 import { LOCALES, LOCALE_FLAGS, LOCALE_NAMES, useI18n } from "@/i18n";
 
@@ -132,12 +133,12 @@ export function Header({ overlay = true }: { overlay?: boolean }) {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3.5 lg:px-10">
         <Link to="/" aria-label="Mulimù — Home" className="flex items-center">
           <img
-            src={logo}
+            src={solidHeader ? logo : logoLight}
             alt="Mulimù — Ospitalità rurale"
             width={321}
             height={319}
-            className={`h-14 w-auto transition-all duration-500 ${
-              solidHeader ? "" : "brightness-0 invert"
+            className={`h-16 w-auto transition-all duration-500 lg:h-[4.5rem] ${
+              solidHeader ? "" : "drop-shadow-[0_2px_14px_rgba(0,0,0,0.5)]"
             }`}
           />
         </Link>

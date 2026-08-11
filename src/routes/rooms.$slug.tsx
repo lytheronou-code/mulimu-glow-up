@@ -7,7 +7,7 @@ import { Reveal } from "@/components/Reveal";
 import { Footer } from "@/components/Footer";
 import { useI18n } from "@/i18n";
 import { ROOMS, getRoom } from "@/data/rooms";
-import { BOOKING_URL, absoluteUrl } from "@/data/site";
+import { BOOKING_URL, SOCIAL_IMAGE_URL, absoluteUrl } from "@/data/site";
 
 export const Route = createFileRoute("/rooms/$slug")({
   loader: ({ params }) => {
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/rooms/$slug")({
           content: `Scopri ${name}, una delle camere della guest house Mulimù nell'Oltrepò Pavese.`,
         },
         { property: "og:type", content: "article" },
-        { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
+        { property: "og:image", content: SOCIAL_IMAGE_URL },
         { property: "og:url", content: absoluteUrl(`/rooms/${params.slug}`) },
       ],
       links: [{ rel: "canonical", href: absoluteUrl(`/rooms/${params.slug}`) }],

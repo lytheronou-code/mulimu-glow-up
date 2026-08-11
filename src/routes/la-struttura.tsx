@@ -5,7 +5,7 @@ import { PhotoGallery } from "@/components/PhotoGallery";
 import { Reveal } from "@/components/Reveal";
 import { Footer } from "@/components/Footer";
 import { useI18n } from "@/i18n";
-import { absoluteUrl } from "@/data/site";
+import { SOCIAL_IMAGE_URL, absoluteUrl } from "@/data/site";
 
 import s1 from "@/assets/struttura-1.webp";
 import s2 from "@/assets/struttura-2.webp";
@@ -36,7 +36,7 @@ export const Route = createFileRoute("/la-struttura")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
+      { property: "og:image", content: SOCIAL_IMAGE_URL },
       { property: "og:url", content: absoluteUrl("/la-struttura") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/la-struttura") }],

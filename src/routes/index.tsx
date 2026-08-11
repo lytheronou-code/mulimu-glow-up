@@ -12,6 +12,7 @@ import {
   CONTACT_EMAIL,
   CONTACT_PHONE,
   CONTACT_PHONE_HREF,
+  SOCIAL_IMAGE_URL,
   absoluteUrl,
   getWhatsAppUrl,
 } from "@/data/site";
@@ -39,7 +40,7 @@ export const Route = createFileRoute("/")({
         content:
           "Una villa storica con cinque camere, vista sui vigneti e esperienze su misura nelle colline dell'Oltrepò Pavese.",
       },
-      { property: "og:image", content: absoluteUrl("/og-mulimu.jpg") },
+      { property: "og:image", content: SOCIAL_IMAGE_URL },
       { property: "og:url", content: absoluteUrl("/") },
     ],
     links: [{ rel: "canonical", href: absoluteUrl("/") }],

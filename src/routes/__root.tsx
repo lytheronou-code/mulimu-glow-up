@@ -10,7 +10,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { I18nProvider } from "../i18n";
-import { ADDRESS, CONTACT_EMAIL, CONTACT_PHONE, SITE_URL } from "../data/site";
+import { ADDRESS, CONTACT_EMAIL, CONTACT_PHONE, SITE_URL, SOCIAL_IMAGE_URL } from "../data/site";
 
 function NotFoundComponent() {
   return (
@@ -78,13 +78,39 @@ export const Route = createRootRoute({
         content:
           "Piccola guest house a gestione familiare tra le colline e i vigneti dell'Oltrepò Pavese.",
       },
+      { name: "theme-color", content: "#4a6048" },
+      { name: "apple-mobile-web-app-title", content: "Mulimù" },
       { property: "og:site_name", content: "Mulimù" },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "it_IT" },
+      { property: "og:title", content: "Mulimù — Guest house nell'Oltrepò Pavese" },
+      {
+        property: "og:description",
+        content:
+          "Una guest house familiare tra natura, vigneti e silenzio nelle colline dell'Oltrepò Pavese.",
+      },
+      { property: "og:image", content: SOCIAL_IMAGE_URL },
+      { property: "og:image:secure_url", content: SOCIAL_IMAGE_URL },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      {
+        property: "og:image:alt",
+        content: "Mulimù Guest House affacciata sui vigneti dell'Oltrepò Pavese",
+      },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Mulimù — Guest house nell'Oltrepò Pavese" },
+      {
+        name: "twitter:description",
+        content: "Natura, quiete e ospitalità familiare tra i vigneti dell'Oltrepò Pavese.",
+      },
+      { name: "twitter:image", content: SOCIAL_IMAGE_URL },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "icon", href: "/favicon.png?v=2", type: "image/png", sizes: "64x64" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png?v=2", sizes: "180x180" },
+      { rel: "manifest", href: "/site.webmanifest" },
     ],
     scripts: [
       {
