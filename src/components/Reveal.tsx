@@ -38,6 +38,14 @@ export function Reveal({
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+
+    const rect = el.getBoundingClientRect();
+    const alreadyReached = rect.top <= window.innerHeight * 0.92;
+    if (alreadyReached) {
+      setVisible(true);
+      return;
+    }
+
     if (!("IntersectionObserver" in window)) {
       setVisible(true);
       return;

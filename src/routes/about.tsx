@@ -47,7 +47,7 @@ function AboutPage() {
 
       <main>
         <section className="mx-auto max-w-7xl px-6 pb-20 pt-36 lg:px-10 lg:pb-28 lg:pt-44">
-          <Reveal className="max-w-4xl">
+          <div className="animate-rise max-w-4xl">
             <p className="eyebrow">Mulimù — Montecalvo Versiggia</p>
             <span className="rule-accent mt-5" />
             <h1 className="mt-6 font-display text-[clamp(3rem,8vw,6.5rem)] leading-[0.96]">
@@ -56,7 +56,7 @@ function AboutPage() {
             <p className="mt-7 max-w-2xl font-display text-[clamp(1.5rem,3vw,2.2rem)] font-light leading-snug text-muted-foreground">
               {t("about.subtitle")}
             </p>
-          </Reveal>
+          </div>
         </section>
 
         <section className="mx-auto grid max-w-7xl items-start gap-14 px-6 pb-24 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24 lg:px-10 lg:pb-36">
