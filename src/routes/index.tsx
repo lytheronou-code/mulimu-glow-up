@@ -229,9 +229,20 @@ function Home() {
           ))}
         </div>
 
-        <a href={`mailto:${CONTACT_EMAIL}`} className="btn-outline mt-14">
-          {t("services.cta")} <ArrowRight aria-hidden="true" className="size-4" />
-        </a>
+        <div className="mt-14 flex flex-wrap gap-3">
+          <a href={`mailto:${CONTACT_EMAIL}`} className="btn-outline">
+            {t("services.cta")} <ArrowRight aria-hidden="true" className="size-4" />
+          </a>
+          <a
+            href={getWhatsAppUrl(t("services.whatsappMessage"))}
+            target="_blank"
+            rel="noreferrer"
+            className="btn-solid"
+          >
+            <MessageCircle aria-hidden="true" className="size-4" />
+            {t("contact.whatsappCta")}
+          </a>
+        </div>
       </section>
 
       {/* Place */}

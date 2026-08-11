@@ -180,6 +180,8 @@ const it: Dict = {
   "services.massage.body":
     "Trattamenti rilassanti in casa, su prenotazione, al rientro da una giornata all'aria aperta.",
   "services.cta": "Scrivici per organizzare la tua esperienza",
+  "services.whatsappMessage":
+    "Ciao Mulimù, vorrei organizzare una delle vostre esperienze. Potete darmi maggiori informazioni?",
 
   "place.eyebrow": "Il luogo",
   "place.title": "Oltrepò Pavese",
@@ -355,6 +357,8 @@ const en: Dict = {
   "services.massage.body":
     "Relaxing treatments at the house, by appointment, after a day spent outdoors.",
   "services.cta": "Write to us to arrange your experience",
+  "services.whatsappMessage":
+    "Hello Mulimù, I would like to arrange one of your experiences. Could you send me more information?",
 
   "place.eyebrow": "The place",
   "place.title": "Oltrepò Pavese",
@@ -531,6 +535,8 @@ const fr: Dict = {
   "services.massage.body":
     "Soins relaxants à la maison, sur réservation, au retour d'une journée en plein air.",
   "services.cta": "Écrivez-nous pour organiser votre expérience",
+  "services.whatsappMessage":
+    "Bonjour Mulimù, je souhaiterais organiser l’une de vos expériences. Pourriez-vous me donner plus d’informations ?",
 
   "place.eyebrow": "Le lieu",
   "place.title": "Oltrepò Pavese",
@@ -706,6 +712,8 @@ const de: Dict = {
   "services.massage.body":
     "Entspannende Behandlungen im Haus, auf Voranmeldung, nach einem Tag im Freien.",
   "services.cta": "Schreiben Sie uns für Ihr Wunscherlebnis",
+  "services.whatsappMessage":
+    "Hallo Mulimù, ich möchte gerne eines Ihrer Erlebnisse organisieren. Können Sie mir weitere Informationen geben?",
 
   "place.eyebrow": "Die Region",
   "place.title": "Oltrepò Pavese",
@@ -882,6 +890,8 @@ const nl: Dict = {
   "services.massage.body":
     "Ontspannende behandelingen in huis, op reservering, na een dag in de buitenlucht.",
   "services.cta": "Schrijf ons voor jouw gewenste ervaring",
+  "services.whatsappMessage":
+    "Hallo Mulimù, ik wil graag een van jullie ervaringen organiseren. Kunnen jullie mij meer informatie sturen?",
 
   "place.eyebrow": "De streek",
   "place.title": "Oltrepò Pavese",
