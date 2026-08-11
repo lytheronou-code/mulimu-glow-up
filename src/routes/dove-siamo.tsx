@@ -11,6 +11,7 @@ import {
   CONTACT_EMAIL,
   CONTACT_PHONE,
   CONTACT_PHONE_HREF,
+  MAP_EMBED_URL,
   MAP_URL,
   absoluteUrl,
 } from "@/data/site";
@@ -131,6 +132,31 @@ function DirectionsPage() {
               </div>
             </address>
           </Reveal>
+        </section>
+
+        <section className="border-y border-border bg-secondary/30 py-24 lg:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-10">
+            <Reveal>
+              <h2 className="text-center font-display text-[clamp(2.5rem,6vw,4.75rem)] leading-none">
+                Mulimù
+              </h2>
+              <div className="relative mt-10 overflow-hidden border border-border bg-muted shadow-[0_30px_80px_-45px_rgba(31,37,30,0.45)]">
+                <iframe
+                  src={MAP_EMBED_URL}
+                  title="Mulimù — Google Maps"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="h-[430px] w-full border-0 sm:h-[520px]"
+                  allowFullScreen
+                />
+              </div>
+              <div className="mt-7 flex justify-center">
+                <a href={MAP_URL} target="_blank" rel="noreferrer" className="btn-outline">
+                  {t("directions.maps")} <ArrowUpRight aria-hidden="true" className="size-4" />
+                </a>
+              </div>
+            </Reveal>
+          </div>
         </section>
 
         <section className="bg-secondary/60 py-24 lg:py-32">
